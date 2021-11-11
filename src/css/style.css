@@ -1,0 +1,697 @@
+@font-face {
+    font-family: "mybold";
+    src: url("../fonts/Martel-Bold.ttf");
+}
+
+@font-face {
+    font-family: "mybold2";
+    src: url("../fonts/Martel-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "NanumMyeongjo";
+    src: url("../fonts/NanumMyeongjo-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Martel";
+    src: url("../fonts/Martel-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "HomemadeApple";
+    src: url("../fonts/HomemadeApple-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SpecialElite";
+    src: url("../fonts/SpecialElite-Regular.ttf");
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-image: url("../media/1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "NanumMyeongjo";
+}
+
+img {
+    object-fit: contain;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+a {
+    font-family: "mybold";
+}
+
+a:hover {
+    /* bad */
+    font-family: "mybold2";
+}
+
+p {
+    line-height: 1.4rem;
+    font-family: "Martel";
+    word-spacing: 0.3rem;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+#three-sections {
+    position: fixed;
+}
+
+#tree-sections__container {
+    width: 100%;
+    height: 100%;
+}
+
+.three-sections__corner {
+    position: absolute;
+}
+
+.three-sections__company {
+    position: absolute;
+    width: 20%;
+    top: 1.375rem;
+    z-index: 100000;
+}
+
+.three-sections__corner img, .three-sections__company img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.three-sections__corner#corner1 {
+    top: 0;
+    left: 0;
+}
+
+.three-sections__corner#corner2 {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.three-sections__corner#corner3 {
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg);
+}
+
+.three-sections__corner#corner4 {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+#container-for-first-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding: 3rem;
+    opacity: 50%;
+}
+
+.ident {
+    margin: 0;
+    text-indent: 3rem;
+}
+
+.firstLetter {
+    float: left;
+    margin-left: -10px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.firstLetter p {
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 1.2rem;
+    padding-top: 1rem;
+}
+
+#container-for-second-image {
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    width: 90%;
+    height: 70%;
+    animation: infinite 3s animationdirigabl alternate;
+}
+
+#container-for-second-image img {
+    opacity: 100%;
+}
+
+#koleso {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+.car {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#listforcar {
+    position: absolute;
+    background: #EFE5CE;
+    border: 2px solid #7B7261;
+}
+
+.typewriter2 p {
+    line-height: normal;
+    font-family: "SpecialElite";
+    font-size: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 11s steps(11, end) forwards;
+}
+
+.typewriter2 {
+    width: fit-content;
+}
+
+.car:last-of-type {
+    animation: imgcar 1s infinite, imgcar2 1s infinite;
+}
+
+.car:nth-of-type(2) {
+    animation: imgcar2 1s infinite;
+}
+
+.tabtext {
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    overflow: hidden;
+    transform: rotate(-12deg);
+    margin-bottom: -10%;
+}
+
+.typewriter h2 {
+    font-size: 1.56rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "HomemadeApple";
+    width: 0;
+    animation: type 3s 2s steps(50, end) forwards;
+    margin: 0;
+    line-height: normal;
+}
+
+.typewriter h2:last-child {
+    width: 0;
+    margin-top: -10%;
+    animation: type 3s 5s steps(50, end) forwards;
+}
+
+#section1 {
+    opacity: 0;
+    animation: fidein 3s forwards;
+}
+
+#tel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 3rem;
+}
+
+#tel2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation: tel 1.5s infinite;
+    transform-origin: 30% 35%;
+}
+
+#tel2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#notes {
+    position: absolute;
+    top: -10%;
+    left: -100%;
+    width: 150%;
+    height: 50%;
+    opacity: 0;
+    animation: fidein 3s 1s forwards, notes 1s infinite alternate;
+}
+
+#notes img {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.25));
+}
+
+#blackfooter {
+    position: fixed;
+    opacity: 0;
+    height: 30%;
+    width: 100%;
+    bottom: 0;
+    padding: 0;
+    left: 0;
+}
+
+#blackfooter img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#monkey {
+    position: fixed;
+    bottom: 70%;
+    left: -25%;
+    transform: scale(1.3);
+    height: 90%;
+    width: 45%;
+}
+
+#monkey img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#circle img {
+    animation: animationcircle 2s infinite linear;
+}
+
+#firstfoot {
+    animation: animationfirstfoot 2s infinite linear;
+}
+
+#secondfoot {
+    animation: animationsecondfoot 1s infinite linear forwards, animationfirstfoot 2s 1s infinite linear;
+}
+
+#hand {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.h-xs-50 {
+    height: 50%;
+}
+
+.changepm {
+    padding-left: 20%;
+}
+
+.changeitems {
+    padding-top: 20%;
+}
+
+.change {
+    display: none;
+}
+
+@keyframes notes {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1%);
+    }
+}
+
+@keyframes animationcircle {
+    from {
+        transform: rotate(0);
+        transform-origin: 50% 75%;
+    }
+    to {
+        transform: rotate(360deg);
+        transform-origin: 50% 75%;
+    }
+}
+
+@keyframes animationsecondfoot {
+    from {
+        transform: matrix(1, -0.2, 0.2, 0.8, 0, 0);
+    }
+    25% {
+        transform: matrix(1, -0.2, 0.25, 0.85, 0, 0);
+    }
+    50% {
+        transform: matrix(1, -0.15, 0.2, 0.9, 0, 0);
+    }
+    75% {
+        transform: matrix(1, -0.1, 0.1, 0.95, 0, 0);
+    }
+    to {
+        transform: matrix(1, -0.15, 0, 0.9, 0, 0);
+    }
+}
+
+@keyframes animationfirstfoot {
+    from {
+        transform: matrix(1, -0.15, 0, 0.9, 0, 0);
+    }
+    12.5% {
+        transform: matrix(1, -0.2, -0.05, 0.85, 0, 0);
+    }
+    25% {
+        transform: matrix(1, -0.2, 0, 0.8, 0, 0);
+    }
+    37.5% {
+        transform: matrix(1, -0.24, 0.1, 0.75, 0, 0);
+    }
+    50% {
+        transform: matrix(1, -0.2, 0.2, 0.8, 0, 0);
+    }
+    62.5% {
+        transform: matrix(1, -0.2, 0.25, 0.85, 0, 0);
+    }
+    75% {
+        transform: matrix(1, -0.15, 0.2, 0.9, 0, 0);
+    }
+    87.5% {
+        transform: matrix(1, -0.1, 0.1, 0.95, 0, 0);
+    }
+    to {
+        transform: matrix(1, -0.15, 0, 0.9, 0, 0);
+    }
+}
+
+@keyframes animationdirigabl {
+    from {
+        transform: translateY(5%) translateX(0);
+    }
+    to {
+        transform: translateY(0) translateX(5%);
+    }
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes type2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes car {
+    from {
+        left: 30%;
+    }
+    to {
+        left: 5%;
+    }
+}
+
+@keyframes imgcar {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes imgcar2 {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes fidein2 {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fideout {
+    from {
+        opacity: 100;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+}
+
+@keyframes fideout2 {
+    from {
+        opacity: 100;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+
+@keyframes fideout3 {
+    from {
+        opacity: 100;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fideinfooter {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fidein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+@keyframes tel {
+    from {
+        transform: rotate(0);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    40% {
+        transform: rotate(0);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    80% {
+        transform: rotate(1deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes handmonkey {
+    from {
+        transform: none;
+    }
+    to {
+        transform: matrix(1, 0, 0.017, 0.94, 0, 0);
+    }
+}
+
+@keyframes gomonkey {
+    from {
+        bottom: 70%;
+        left: -25%;
+        transform: scale(1.3);
+    }
+    33.3% {
+        bottom: 70%;
+        left: -25%;
+        transform: scale(1.3);
+    }
+    66.7% {
+        bottom: 45%;
+        left: 0;
+        transform: scale(1.15);
+    }
+    to {
+        bottom: 15%;
+        left: 15%;
+        transform: scale(1);
+    }
+}
+
+@keyframes gomonkey2 {
+    from {
+        bottom: 15%;
+        left: 15%;
+        transform: scale(1);
+    }
+    12.5% {
+        bottom: 15%;
+        left: 15%;
+        transform: scale(1);
+    }
+    50% {
+        bottom: 20%;
+        left: 57.5%;
+        transform: scale(1);
+    }
+    to {
+        bottom: 25%;
+        left: 100%;
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 768px) {
+    .tabtext {
+        margin-bottom: 0;
+    }
+    #monkey {
+        width: 23%;
+        bottom: 50%;
+        left: -10%;
+        transform: scale(1.5);
+    }
+    .h-xs-50 {
+        height: 100%;
+    }
+    #koleso {
+        left: 20%;
+    }
+    .changepm {
+        padding-left: 0;
+        padding-top: 10%;
+    }
+    .change {
+        display: block;
+    }
+    .changeitems {
+        padding-top: 0;
+        align-items: center;
+    }
+    @keyframes gomonkey {
+        from {
+            bottom: 50%;
+            left: -10%;
+            transform: scale(1.5);
+        }
+        33.3% {
+            bottom: 50%;
+            left: -10%;
+            transform: scale(1.5);
+        }
+        66.7% {
+            bottom: 25%;
+            left: 0;
+            transform: scale(1.25);
+        }
+        to {
+            bottom: 5%;
+            left: 15%;
+            transform: scale(1);
+        }
+    }
+    @keyframes gomonkey2 {
+        from {
+            bottom: 5%;
+            left: 15%;
+            transform: scale(1);
+        }
+        12.5% {
+            bottom: 5%;
+            left: 15%;
+            transform: scale(1);
+        }
+        50% {
+            bottom: 0;
+            left: 57.5%;
+            transform: scale(1);
+        }
+        to {
+            bottom: 15%;
+            left: 100%;
+            transform: scale(1);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    img {
+        padding: 0!important;
+    }
+}
+
+@media(min-width:1200px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
